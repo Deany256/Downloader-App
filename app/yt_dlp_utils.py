@@ -48,6 +48,18 @@ class YTDLPUtils:
             for fmt in formats
         ]
         
+    def get_thumbnail(self, url):
+        """Get the URL for the thunbnail in the max resolution
+
+        Args:
+            url (str): The URL of the video.
+
+        Returns:
+            str: Thumbnail URL
+        """
+        metadata = self.extract_metadata(url)
+        thumbnail = metadata.get('thumbnail')
+        return thumbnail
         
 
 
