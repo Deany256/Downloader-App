@@ -3,6 +3,11 @@
 {% block title %}Dashboard{% endblock %}
 
 {% block content %}
-<h1>Dashboard</h1>
-<p>Welcome, {{ current_user.username }}!</p>
+<h1>Enter Video URL</h1>
+<form method="post">
+    <label for="url">URL:</label>
+    <input type="text" id="url" name="url" required>
+    <br>
+    <button type="submit">Submit</button>
+</form>
 {% endblock %}
