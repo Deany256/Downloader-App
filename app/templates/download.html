@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block title %}Download{% endblock %}
+
+{% block content %}
+<h1>Enter Video URL</h1>
+<img src="{{ video.thumbnail }}" alt="Video Thumbnail">
+<p>Video Title: {{ video.title }}</p>
+<p>Video URL: {{ video.url }}</p>
+{% endblock %}
